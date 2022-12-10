@@ -1,0 +1,14 @@
+@use './scss/base';
+@use './scss/header';
+@use './landing.scss';
+@use './AboutMe.scss';
+@use './scss/modal.scss';
+@use './scss/contact.scss';
+@use './scss/Projects.scss';
+
+*{
+    font-family: var(--fonts);
+    margin: 0;
+    padding: 0;
+}
+

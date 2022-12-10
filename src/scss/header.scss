@@ -1,0 +1,113 @@
+header{
+    position: fixed;
+    z-index: 1002;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--sec);
+    opacity: 90%;
+    border-radius: 10%;
+    margin: 1rem;
+    
+    p#iconAction{
+        font-weight: 700;
+        padding: 1rem;
+        font-size: 2rem;
+        transition: color 1s;
+        transition-timing-function: ease;
+        color: var(--first);
+        &:hover{
+        color: #bb1717;
+        cursor: pointer;
+        }
+        
+    }
+
+        nav.desplegable{
+            display: flex;
+            flex-flow: column wrap;
+            height: inherit;
+
+
+                a{
+                    
+                    display: none;
+                     &::before{
+                        content: '';
+                        width: 0rem;
+                        height: auto;
+                        position: absolute;
+                        top: 15%;
+                        left: -1rem;
+                        background-color: var(--third);
+                        z-index: -1;
+                        transition: all 1s;
+                        transform: skewX(340deg);
+                        transition-timing-function: ease;
+                        
+                     }
+                     &:hover::before{
+                        content: '';
+                        width: 100%;
+                        height:  -webkit-fill-available;
+                        position: absolute;
+                        top: 15%;  
+                        background-color:var(--third);
+                        z-index: -1;   
+                        transform: skewX(340deg);
+                     }
+                     
+                }
+        }
+}
+
+@media(min-width:481px){
+    header 
+        {
+            width: fit-content;
+            nav a{
+            font-size: 2rem;
+            }
+            
+        }
+        .headerShow{
+            width: 45%  !important; 
+        }
+    }
+                
+@media(min-width:768px){
+header 
+    {
+        width: fit-content;
+        nav a{
+        font-size: 2rem;
+        }
+    }
+    .headerShow{
+        width: 30% !important;
+    }
+   
+}
+
+
+
+.show{
+    display: initial !important;
+    padding: 1rem 0rem 1rem  1rem;
+    text-decoration: none;
+    height: auto;
+    width: 80%;
+    font-weight: 400;
+    color: var(--first);
+    position: relative;
+    z-index: 2;
+   }
+
+.headerShow{
+    height:  -webkit-fill-available;
+    width: 100%;
+    z-index: 4;
+    justify-content: flex-start;
+    transition-timing-function: ease;
+    border-radius: 0;
+    margin:0;
+    }

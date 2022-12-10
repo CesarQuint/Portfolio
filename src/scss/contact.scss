@@ -1,0 +1,84 @@
+section.contact-contain{
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: var(--sec);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    h2{
+        color: var(--fourth);
+        font-size: x-large;
+        text-align: center;
+    }
+    form{
+        margin: 2rem 0 2rem 0;
+        padding: 0 1rem 0 1rem;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1.5rem;
+        color: var(--first);
+        div.inputSection{
+            display: flex;
+            flex-flow: column wrap;
+            gap: 1rem;
+
+            input{
+                padding: 0.5rem;
+                border-radius: 5px;
+                height: 2rem;
+                color: var(--third);
+            }
+            textarea{
+                border-radius: 5px; 
+                padding: 0.5rem;
+                color: var(--third);
+            }
+        }
+
+        button{
+            padding: 1rem;
+            border-radius: 5px;
+            background-color: var(--fourth);
+            color: var(--first);
+            transition: all 1s;
+            transition-timing-function: ease;
+
+            &:hover{
+                background-color: var(--third);
+                color: var(--fourth);
+            }
+        }
+    }
+}
+@media(min-width:768px){
+    section.contact-contain{
+    padding: 2rem ;
+    form{
+        margin: 2rem ;
+       }
+
+}
+}
+
+@media(min-width:1024px){
+    section.contact-contain{
+    padding: 1rem 16rem ;
+    form{
+        margin: 2rem ;
+        padding: 2rem 4rem;
+        border: 2px solid var(--first);
+        border-radius: 1rem;
+        box-shadow: 0px 4px 4px 10px var(--third);
+        input{
+            margin: 0 1rem;
+        }
+        textarea{
+            margin: 0 1rem;
+        }
+        button{
+            width: 30%;
+            margin: auto;
+        }
+       }
+
+}
+}

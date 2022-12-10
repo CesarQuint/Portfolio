@@ -1,0 +1,172 @@
+
+
+section.projectsContainer{
+    background-color: var(--third);
+    padding: 2rem 1rem 2rem;
+    
+    h2{
+        color: var(--fourth);
+        text-align: center;
+        padding: 1rem 0 1rem;
+    }
+
+    div.skills{
+      
+        //carousel
+        div.react-multi-carousel-list{
+
+            .react-multiple-carousel__arrow {
+                z-index: 3;}
+
+            div.sCard{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                h3{
+                    padding: 1rem 0 1rem 0;
+                    color: var(--first);
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: 6rem;
+                    padding: 1rem;
+                    position: relative;
+                    z-index: 1;
+
+                    &.html{
+                        color: #f1481c; 
+                    }
+                    &.css{
+                        color: #254bdd;
+                    }
+                    
+                    &.javaScript{
+                        color: #edf11c; 
+                    }
+                    &.bootStrap{
+                        color: #dd25be;
+                    }
+                    &.tailwind{
+                        color: #1ce3f1; 
+                    }
+                    &.sass{
+                        color: #ff6bbc;
+                    }
+                    
+                    &.react{
+                        color: #3e25cc; 
+                    }
+                    &.npm{
+                        color: #a52525;
+                    }
+                    &.git{
+                        color: #f13c1c; 
+                    }
+                    &.gitHub{
+                        color: #7b25cc;
+                    }
+                    
+                    &.remix{
+                        color: #1cd1f1; 
+                    }
+                    &.vite{
+                        color: #b825dd;
+                    }
+                }
+                span{
+                    padding: 1rem ;
+                    font-size: 1rem;
+                    text-align: justify;
+                    color: var(--first);
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    div.projectsShow{
+        div.cardProject{
+            padding: 1rem 0 1rem;
+            border: 2px solid var(--sec);
+            border-left: 0;
+            border-right: 0;
+            margin: 1rem 0 1rem 0;
+            h3{
+                color: var(--first);
+                text-align: center;
+            }
+            img{
+                width:-webkit-fill-available;
+                margin: 1rem;
+                border-radius: 2%;
+            }
+            p{
+                padding: 0 1rem 0 1rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                color: var(--first);
+            }
+            button{
+                margin: 1rem;
+                padding: 0.5rem;
+                border-radius:5px;
+                color: var(--first);
+                background-color: var(--sec);
+                transition: all 1s;
+                transition-timing-function: ease;
+                &:hover{
+                    background-color: var(--fourth);
+                }
+            }
+        }
+    }
+
+
+}
+
+@media(min-width:768px){
+    div.projectsGrid{
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: space-evenly;
+        gap: 1rem;
+        div.cardProject{
+            padding: 1rem 0 1rem;
+            border: 2px solid var(--sec);
+            border-left: 0;
+            border-right: 0;
+            margin: 1rem 0 1rem 0;
+            width: 45%;
+            h3{
+                color: var(--first);
+                text-align: center;
+            }
+            img{
+                margin: 1rem;
+                border-radius: 2%;
+            }
+            p{
+                padding: 0 1rem 0 1rem;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                color: var(--first);
+            }
+            button{
+                margin: 1rem;
+                padding: 0.5rem;
+                border-radius:5px;
+                color: var(--first);
+                background-color: var(--sec);
+                transition: all 1s;
+                transition-timing-function: ease;
+                &:hover{
+                    background-color: var(--fourth);
+                }
+            }
+        }
+    }
+}
