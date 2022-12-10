@@ -3,7 +3,8 @@ section.contact-contain{
     background-color: var(--sec);
     display: flex;
     flex-flow: column wrap;
-    align-items: stretch;
+    align-content: stretch;
+    width:  -webkit-fill-available;
     h2{
         color: var(--fourth);
         font-size: x-large;
@@ -26,11 +27,13 @@ section.contact-contain{
                 border-radius: 5px;
                 height: 2rem;
                 color: var(--third);
+                width:  -webkit-fill-available;
             }
             textarea{
                 border-radius: 5px; 
                 padding: 0.5rem;
                 color: var(--third);
+                width:  -webkit-fill-available;
             }
         }
 
