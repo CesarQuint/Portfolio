@@ -56,11 +56,27 @@ section.landing{
         }
     }
     div.name{
-        h1{
+        h1.m19{
             color: var(--fourth);
             text-decoration: underline;
             text-underline-offset: 1rem;
             padding-bottom: 1rem;
+            position: relative;
+
+                &.text-wrapper {
+                    position: relative;
+                    display: inline-block;
+                    padding-top: 0.2em;
+                    padding-right: 0.05em;
+                    padding-bottom: 0.1em;
+                    overflow: hidden;
+                }
+
+                &.letter {
+                transform-origin: 50% 100%;
+                display: inline-block;
+                line-height: 1em;
+                }
         }
     }
     div.description{
